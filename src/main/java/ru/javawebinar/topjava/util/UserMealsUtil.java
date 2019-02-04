@@ -27,8 +27,6 @@ public class UserMealsUtil {
 
     public static List<UserMealWithExceed> getFilteredWithExceeded(List<UserMeal> mealList, LocalTime startTime, LocalTime endTime, int caloriesPerDay) {
 
-
-        Map<LocalDate, Long> map;
         List<UserMealWithExceed> userMealWithExceeds = new ArrayList<>();
         UserMealWithExceed userMealWithExceed;
         Map<LocalDate, Integer> days = new HashMap<>();
